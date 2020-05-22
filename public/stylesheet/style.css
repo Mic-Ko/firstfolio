@@ -39,6 +39,16 @@ html {
     font-size: 6vw;
   }
 }
+@media screen and (max-width: 500px) {
+  #title {
+    font-size: 7vw;
+  }
+}
+@media screen and (max-width: 375px) {
+  #title {
+    font-size: 8vw;
+  }
+}
 
 #title span {
   background: -webkit-linear-gradient(white, #38495a);
@@ -152,7 +162,7 @@ nav a{
 }
 
 #about {
-  height: 2200px;
+  height: 120vw;
   display: block;
   width: 100%;
   z-index: 2;
@@ -163,7 +173,7 @@ nav a{
 }
 
 #contact {
-  height: 1500px;
+  height: 1000px;
   display: block;
   width: 100%;
   z-index: 2;
@@ -178,8 +188,15 @@ nav a{
   padding: 12vw 0;
   margin: 0 auto;
   padding-bottom: 10vw;
-  font-size: 2.5vw;
+  font-size: 1.9vw;
 }
+.skills {
+  color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  margin: auto;
+}
+
 
 .info p {
   font-family: Nanum Myeongjo;
@@ -188,9 +205,16 @@ nav a{
   margin-bottom: 5vw;
   display: inline-block;
 }
+
+.info ul {
+  list-style-type: none;
+  font-family: Nanum Myeongjo;
+  line-height: 1.2em;
+}
+
 @media screen and (min-width: 901px) {
   .info {
-    font-size: 2.5vw;
+    font-size: 1.9vw;
   }
 }
 
@@ -203,16 +227,34 @@ nav a{
 
 @media screen and (max-width: 600px) {
   .info {
-    font-size: 4vw;
+    font-size: 3.5vw;
     padding: 8vw 0;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
   .info {
     font-size: 4vw;
     max-width: 90vw;
   }
 }
+@media screen and (max-width: 1366px) {
+  #about {
+ height: 140vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #about {
+ height: 190vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #about {
+ height: 210vw;
+  }
+}
+
 
 /* ***************************************************** */
  /* social media buttons */
@@ -408,6 +450,12 @@ button {
   color: #FFF;
 }
 
+@media screen and (max-width: 375px) {
+  button {
+    padding: 10px 30px
+  }
+}
+
 /*button:before (attr data-hover)*/
 button:hover:before{opacity: 1; transform: translate(0,0);}
 button:before{
@@ -433,11 +481,7 @@ button div{
   transition: all .3s ease-in-out;
 }
 
-.skills {
-  color: aliceblue;
-  display: flow-root;
-  font-size: 1.2em;
-}
+
 
 
 
