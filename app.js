@@ -16,6 +16,10 @@ app.get("/", function(req, res){
 	res.render("landing");
 });
 
+app.get("/resume", function(req, res){
+	res.render("resume");
+});
+
 
 app.listen(3001, function(){
 	console.log("serwer aktywny 3001");
