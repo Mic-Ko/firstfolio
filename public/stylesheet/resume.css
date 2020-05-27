@@ -2,26 +2,22 @@
     box-sizing: border-box
   }
 
-  html {
-    background: url(https://images.unsplash.com/photo-1488485339565-566d63f7dbb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
+  body {
+    margin: 2.8rem;
+    /* overflow: hidden; */
+    background-image: url("/back2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-
-
-  }
-
-
-  body {
-    margin: 2.2rem
   }
 
   div#resume {
     min-width: 310px;
     font: 16px Helvetica, Avernir, sans-serif;
     line-height: 24px;
-    color: black;
-    margin-left: 20%;
-    max-width: 900px;
+    color: #fff;
+    margin-left: 10vw;
+    max-width: 960px;
+    box-shadow: 2px 2px 40px black ;
   }
 
   div#resume h1 {
@@ -108,13 +104,44 @@
     max-width: 220px
   }
 
+  @media screen and (max-width:1350px) {
+    div#resume h2 span {
+      position: static;
+      display: block;
+    }
+    div#resume {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    }
+  }
+
+
   @media screen and (max-width:1100px) {
     div#resume h2 span {
       position: static;
       display: block;
-      margin-top: 2px
+      margin-top: 2px;
+    }
+    body {
+      margin-left: 5vw;
+      margin-right: 5vw;
+      margin: 3.5vw;
     }
   }
+
+  @media screen and (max-width:900px) {
+    body {
+      margin-left: 5vw;
+      margin-right: 5vw;
+      margin:3.3vw;
+    }
+    div#resume {
+      margin-left: 5vw;
+      margin-right: 5vw;
+      }
+  }
+
+
 
   @media screen and (max-width:550px) {
     body {
