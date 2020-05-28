@@ -4,20 +4,21 @@
 
   body {
     margin: 2.8rem;
-    /* overflow: hidden; */
     background-image: url("/back2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    border-bottom-style: none;
   }
 
   div#resume {
     min-width: 310px;
     font: 16px Helvetica, Avernir, sans-serif;
-    line-height: 24px;
+    line-height: 22px;
     color: #fff;
     margin-left: 10vw;
     max-width: 960px;
     box-shadow: 2px 2px 40px black ;
+    padding: 2vw;
   }
 
   div#resume h1 {
@@ -51,7 +52,11 @@
     margin: 0 0 16px 0
   }
 
-  div#resume a {
+  a a:hover, a:visited, a:link, a:active{
+    border-bottom-style: none !important;
+  }
+
+  div#resume p a {
     color: #999;
     text-decoration: none;
     border-bottom: 1px dotted #999
@@ -104,6 +109,40 @@
     max-width: 220px
   }
 
+  /* ********************************************** */
+  socjalmedia buttons
+  /* ********************************************** */
+
+
+  .container {
+    max-width: 980px;
+    margin: 0 auto;
+    background: #f4f4f4;
+  }
+
+  .icons-container {
+    margin: 0;
+    display: flex ;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .icon-container {
+    padding: 1em 1.2em;
+    border-radius: 0.5em;
+  }
+
+  .icons-container a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+
+
+
+
+
+
   @media screen and (max-width:1350px) {
     div#resume h2 span {
       position: static;
@@ -140,9 +179,15 @@
       margin-right: 5vw;
       }
   }
-
-
-
+  @media screen and (max-width:768px) {
+    body {
+      margin:1vw;
+    }
+    div#resume{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    }
+  }
   @media screen and (max-width:550px) {
     body {
       margin: 1rem
