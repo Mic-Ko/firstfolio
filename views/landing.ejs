@@ -10,12 +10,17 @@
   </ul>
 </header>
 
+
+
 <div class="back" class="overlay">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <div id='stars'></div>
     <div id='stars2'></div>
     <div id='stars3'></div>
+</div>
 
+<div id="home">
+  <h1></h1>
 </div>
 
 <div id='title'>
@@ -35,9 +40,6 @@
 </div>
 
 
-<div id="home">
-  <h1></h1>
-</div>
 
 
 <div id="about">
@@ -46,21 +48,22 @@
     <p data-aos="fade-up-right">My name is Michal Kozdras. I am a front-end developer on beginning of my new road. Actualy based in Runcorn United Kingdom.</p>
     <p data-aos="fade-up-left">I am interested in an internship or a junior Web Developer position where I will support the team, your project and gain experience.</p>
     <p data-aos="fade-up-right">At this moment I am still learning and know the basics of :</p>
-     <ul data-aos="fade-left" class="skills">
+     <ul data-aos="fade-up-left" class="skills">
        <li><i class="fab fa-html5"></i > HTML</li>
        <li> <i class="fab fa-bootstrap"></i> Bootstrap</li>
        <li><i class="fab fa-css3-alt"></i> CSS</li>
-       <li><i class="fab fa-github-square"></i> Git + GitHub </li>
+       <li><i class="fab fa-node"></i> NodeJS</li>
       </ul>
       <ul data-aos="fade-left" class="skills">
         <li><i class="fab fa-js"></i> JavaScript</li>
         <li><i class="fab fa-envira"></i> MongoDB</li>
         <li><i class="fas fa-dollar-sign"></i> JQuery</li>
-        <li><i class="fab fa-node"></i> NodeJS</li>
+        <li><i class="fab fa-github-square"></i> Git + GitHub </li>
+
 
       </ul>
     <p data-aos="fade-up-right">In free time I am a medieval historical reenactor, Champion of World 2015, and multiple Champion of north Poland in Knight Sport. Check Video. </p>
-    <section data-aos="fade-up-left" class="container">
+    <section data-aos="fade-left" class="container">
         <button id="toggle-button" data-hover="Play!"><div>Video!</div></button>
       </section>
     <div class="video-container" >
@@ -75,11 +78,14 @@
 <div id="contact">
   <section class="info">
     <p data-aos="fade-up-left">Are you interested? Check my Resume.</p>
+    <section data-aos="fade-left" class="container">
+      <form action="/resume" method="get" target="_blank">
+        <button type="submit" id="toggle-button" data-hover="Check!"><div>Resume</div></button>
+      </form>
+    </section>
+    <p data-aos="fade-up-right">You can find me on:</p>
 
   </section>
-
-
-  <h1>Contact</h1>
   <div id='contact-info'>
     <div class='links'>
       <a href='https://www.linkedin.com/in/michal-kozdras-857b191a6/' class='orange-border' target='_blank'>
