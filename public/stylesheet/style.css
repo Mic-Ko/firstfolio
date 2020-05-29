@@ -3,16 +3,26 @@ html {
   width:100% ;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   scroll-behavior: smooth;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow-x: hidden;
+}
+
+body {
+
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
 }
 
 .back{
-    position:fixed;
     width:100%;
     height:100vh;
     top:0px;
     left:0px;
-    z-index:1000;
   }
 
 
@@ -94,43 +104,134 @@ html {
 /* *********************************************************************** */
 /* nav bar section  */
 /* *********************************************************************** */
-nav {
-  width: 100%;
-  overflow: hidden;
+
+/* header */
+
+.header {
   position: fixed;
-  top:0;
-  font-family: "lato", sans-serif;
-  font-weight: 300;
-  color: #fff;
+  width: 100%;
+  z-index: 3;
+
 }
 
-a:hover {
-  color:rgb(33, 53, 82)
-}
-:active {
-  outline:none !important;
-}
-nav ul {
-  padding: 0;
+.header ul {
   margin: 0;
+  padding: 0;
   list-style: none;
-}
-nav ul li {
-  float: left;
-}
-
-nav a{
-  padding: 20px;
-  width: 100px;
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
+  overflow: hidden;
+  text-align: right;
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: rgba(64, 83, 105, 0.3);
+
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: right;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
 /* *********************************************************************** */
 /* sections */
 /* *********************************************************************** */
@@ -139,7 +240,6 @@ nav a{
   height: 1000px;
   display: block;
   width: 100%;
-  z-index: 2;
 }
 #home h1 {
   color: aliceblue;
@@ -150,7 +250,7 @@ nav a{
   height: 120vw;
   display: block;
   width: 100%;
-  z-index: 2;
+
 }
 #about h1 {
   color: aliceblue;
@@ -161,7 +261,6 @@ nav a{
   height: 1000px;
   display: block;
   width: 100%;
-  z-index: 2;
 }
 #contact h1 {
   color: aliceblue;
@@ -219,7 +318,7 @@ body {
   font-size: 1.5rem;
 }
 
-html, body, #contact-info {
+ #contact-info {
   width:100%;
   height:100%;
 }
@@ -443,7 +542,7 @@ button div{
     font-size: 13vw;
   }
   .arrow {
-    top: 65% ;
+    top: 70% ;
   }
   .info {
     font-size: 7vw;
@@ -454,7 +553,7 @@ button div{
     font-size: 13vw;
   }
   .arrow {
-    top: 65%;
+    top: 70%;
   }
   .info {
     font-size: 7vw;
