@@ -67,7 +67,7 @@
         <button id="toggle-button" data-hover="Play!"><div>Video!</div></button>
       </section>
     <div class="video-container" >
-      <video autoplay loop muted class="video-bg" id="video-bg"> <!--this id is only used for the toggle function; can be removed if you don't need an event -->
+      <video autoplay loop muted class="video-bg" id="video-bg" style="display: none"> <!--this id is only used for the toggle function; can be removed if you don't need an event -->
         <!-- whatever video you put here will be (effectively) cropped to fit container size; make sure you're okay with it shrinking to the top left corner of the video at your specified minimum dimensions -->
             <source src="promo.webm" type="video/webm" alt="HTML5 background video">
           </video>
@@ -76,7 +76,7 @@
 </div>
 </div>
 <div id="contact">
-  <section class="info">
+  <section id="info" class="info active">
     <p data-aos="fade-up-left">Are you interested? Check my Resume.</p>
     <section data-aos="fade-left" class="container">
       <form action="/resume" method="get" target="_blank">
