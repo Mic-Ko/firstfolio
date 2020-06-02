@@ -48,7 +48,8 @@
     <p data-aos="fade-up-right">My name is Michal Kozdras. I am a front-end developer on beginning of my new road. Actualy based in Runcorn United Kingdom.</p>
     <p data-aos="fade-up-left">I am interested in an internship or a junior Web Developer position where I will support the team, your project and gain experience.</p>
     <p data-aos="fade-up-right">At this moment I am still learning and know the basics of :</p>
-     <ul data-aos="fade-up-left" class="skills">
+     <!-- <ul data-aos="fade-up-left" class="skills">
+       <p class="description">Touch the Skill!!</p>
        <li><i class="fab fa-html5"></i > HTML</li>
        <li> <i class="fab fa-bootstrap"></i> Bootstrap</li>
        <li><i class="fab fa-css3-alt"></i> CSS</li>
@@ -59,12 +60,39 @@
         <li><i class="fab fa-envira"></i> MongoDB</li>
         <li><i class="fas fa-dollar-sign"></i> JQuery</li>
         <li><i class="fab fa-github-square"></i> Git + GitHub </li>
+      </ul> -->
+      <div data-aos="fade-up-right" class="content">
+        <div class="content-1">znam dość dobrze html</div>
+        <div class="content-1">znam podstawy css potrafie go wykorzystac w budowie storny </div>
+        <div class="content-2">ciagle sie go ucze,mam mocne podstawy</div>
+        <div class="content-2">rozumiem podstawy tej technologii</div>
+        <div class="content-2">Umiem wykorzystać tą bibliotekę</div>
+        <div class="content-2">Potrafie stworzyć app i korzystać z NPM m.in Express</div>
+        <div class="content-2">Umiem krzystać z baz danych z wykorzystaniem Mongoos</div>
+        <div class="content-2">Korzystam z Gita w codziennej pracy</div>
+        <div class="content-2 show">kliknij na ikone</div>
+      </div>
 
 
-      </ul>
+      <div data-aos="fade-up-left" class="button-wrap">
+        <ul class="skills">
+          <li class="button"><i class="fab fa-html5"></i > HTML</li>
+          <li class="button"><i class="fab fa-css3-alt"></i> CSS</li>
+          <li class="button"><i class="fab fa-js"></i> JS</li>
+          <li class="button"><i class="fas fa-dollar-sign"></i> JQuery</li>
+          <li class="button"><i class="fab fa-bootstrap"></i>Bootstrap</li>
+          <li class="button"><i class="fab fa-node"></i> NodeJS</li>
+          <li class="button"><i class="fab fa-envira"></i> MongoDB</li>
+          <li class="button"><i class="fab fa-github-square"></i> Git+Github</li>
+        </ul>
+      </div>
+
+
+
+
     <p data-aos="fade-up-right">In free time I am a medieval historical reenactor, Champion of World 2015, and multiple Champion of north Poland in Knight Sport. Check Video. </p>
-    <section data-aos="fade-left" class="container">
-        <button id="toggle-button" data-hover="Play!"><div>Video!</div></button>
+    <section data-aos="fade-left"  class="container ">
+        <button id="toggle-button" class="vidbutton"  data-hover="Play!"><div>Video!</div></button>
       </section>
     <div class="video-container" >
       <video autoplay loop muted class="video-bg" id="video-bg" style="display: none"> <!--this id is only used for the toggle function; can be removed if you don't need an event -->
@@ -78,7 +106,7 @@
 <div id="contact">
   <section id="info" class="info active">
     <p data-aos="fade-up-left">Are you interested? Check my Resume.</p>
-    <section data-aos="fade-left" class="container">
+    <section data-aos="fade-left" class="resume">
       <form action="/resume" method="get" target="_blank">
         <button type="submit" id="toggle-button" data-hover="Check!"><div>Resume</div></button>
       </form>
