@@ -9,18 +9,6 @@ button.addEventListener('click', function() {
 });
 
 
-var ident = document.getElementById("div1")
-var button = document.getElementById('toggle-button');
-button.addEventListener('click', function() {
-    var info = document.getElementById('info')
-    info.classList.toggle("active")
-  })
-
-  var button = document.getElementById('toggle-button');
-  button.addEventListener('click', function() {
-      var vidbutton = document.querySelector('#toggle-button')
-      vidbutton.classList.toggle("vidbutton")
-    })
 
 
 $('.button').first().addClass('show');
@@ -49,3 +37,5 @@ $('.button').mouseover(function(){
   $siblings.removeClass('show');
   $this.addClass('show');
 })
+
+

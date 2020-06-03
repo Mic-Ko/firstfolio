@@ -1,24 +1,39 @@
 * {
-    box-sizing: border-box
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  scroll-behavior: smooth;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
   body {
     margin: 2.8rem;
+    margin-bottom: 0;
+    margin-top: 0;
     background-image: url("/back2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom-style: none;
+    font-family: 'Raleway', sans-serif;
+    max-width: 100%;
+    max-height: 100%;
   }
+
 
   div#resume {
     min-width: 310px;
-    font: 16px Helvetica, Avernir, sans-serif;
     line-height: 22px;
     color: #fff;
     margin-left: 10vw;
-    max-width: 960px;
+    max-width: 900px;
     box-shadow: 2px 2px 40px black ;
     padding: 2vw;
+    margin-top: 2.8rem;
   }
 
   div#resume h1 {
@@ -40,7 +55,7 @@
   div#resume h2 span {
     position: absolute;
     bottom: 0;
-    right: 0;
+    padding-left: 5px;
     font-style: italic;
     font-family: Georgia, serif;
     font-size: 16px;
@@ -52,6 +67,10 @@
     margin: 0 0 16px 0
   }
 
+  div#resume ul li {
+    list-style-type: none;
+    padding-bottom: 10px;
+  }
   a a:hover, a:visited, a:link, a:active{
     border-bottom-style: none !important;
   }
@@ -67,7 +86,7 @@
     color: #000
   }
 
-  div#resume p.objective {
+  div#resume p.sum {
     font-family: Georgia, serif;
     font-style: italic;
     color: #666
@@ -94,7 +113,7 @@
   }
 
   div#resume dl dd {
-    width: 500px;
+    width: 90%;
     padding-left: 26px
   }
 
@@ -164,7 +183,6 @@
     body {
       margin-left: 5vw;
       margin-right: 5vw;
-      margin: 3.5vw;
     }
   }
 
@@ -173,7 +191,6 @@
     body {
       margin-left: 5vw;
       margin-right: 5vw;
-      margin:3.3vw;
     }
     div#resume {
       margin-left: 5vw;
@@ -181,18 +198,13 @@
       }
   }
   @media screen and (max-width:768px) {
-    body {
-      margin:1vw;
-    }
     div#resume{
     margin-left: 1vw;
     margin-right: 1vw;
     }
   }
   @media screen and (max-width:550px) {
-    body {
-      margin: 1rem
-    }
+
     div#resume img {
       transform: rotate(0deg)
     }
@@ -232,6 +244,9 @@
     div#resume img {
       margin: 0
     }
+    div#resume li {
+      list-style-type: none;
+    }
   }
 
   @media screen and (max-width:320px) {
@@ -253,3 +268,18 @@
       margin-right: 20px
     }
   }
+
+
+  /* *********************************************************************** */
+/* footer */
+/* ****************************************************************** */
+
+footer {
+  padding: 20px;
+  text-align: center;
+  color: aliceblue;
+  margin-top: 20px;
+  left: 0;
+  bottom: 0;
+
+}
