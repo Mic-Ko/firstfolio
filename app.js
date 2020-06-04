@@ -1,11 +1,8 @@
 const   express     = require("express"),
         app         = express(),
-        bodyParser  = require("body-parser"),
-        mongoose    = require("mongoose")
+        bodyParser  = require("body-parser");
 
-// trzeba zmienic nazwe bazy danych na wybrana przez siebie, stworzy sie sama
-mongoose.connect("mongodb://localhost/portfolio_v1", {useUnifiedTopology: true,
-useNewUrlParser: true,});
+
 
 app.set("view engine", "ejs");
 
