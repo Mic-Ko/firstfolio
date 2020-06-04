@@ -21,6 +21,7 @@ app.get("/resume", function(req, res){
 });
 
 
-app.listen(3001, function(){
-	console.log("serwer aktywny 3001");
+app.listen(process.env.PORT, process.env.IP, function(){
+	console.log("yelpcamp server started!")
 });
+

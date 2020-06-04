@@ -45,9 +45,12 @@ html {
     border-bottom: 1px solid #999;
     line-height: 50px
   }
-  div#resume h1 span {
+  div#resume h1 p{
     font-size: 22px;
-    color: #666
+    color: #666;
+	line-height: 18px;
+	margin-left: 25%;
+	margin-bottom: 0;
   }
   div#resume h2 {
     font-size: 20px;
@@ -67,6 +70,9 @@ html {
   }
 
   div#resume p {
+    margin: 0 0 16px 0
+  }
+  div#resume p span {
     margin: 0 0 16px 0
   }
 
@@ -201,10 +207,14 @@ html {
   }
   @media screen and (max-width:768px) {
     div#resume{
-    margin-left: 1vw;
-    margin-right: 1vw;
+    	margin-left: 1vw;
+    	margin-right: 1vw;
     }
+	div#resume h1 p{
+		margin-left:0;
   }
+
+}
   @media screen and (max-width:550px) {
 
     div#resume img {
@@ -280,5 +290,4 @@ footer {
   margin-top: 20px;
   left: 0;
   bottom: 0;
-
 }
