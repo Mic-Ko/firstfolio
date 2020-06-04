@@ -45,7 +45,10 @@ html {
     border-bottom: 1px solid #999;
     line-height: 50px
   }
-
+  div#resume h1 span {
+    font-size: 22px;
+    color: #666
+  }
   div#resume h2 {
     font-size: 20px;
     margin: 0 0 6px 0;
@@ -129,14 +132,13 @@ html {
   }
 
   /* ********************************************** */
-  socjalmedia buttons
+  /* socjalmedia buttons */
   /* ********************************************** */
 
 
   .container {
     max-width: 980px;
     margin: 0 auto;
-    background: #f4f4f4;
   }
 
   .icons-container {
@@ -243,9 +245,6 @@ html {
     }
     div#resume img {
       margin: 0
-    }
-    div#resume li {
-      list-style-type: none;
     }
   }
 
