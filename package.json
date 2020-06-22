@@ -1,22 +1,29 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "first portfolio page",
+  "description": "Michal Kozdras portfolio",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-<<<<<<< HEAD
-	"start": "node app.js"
-=======
-    "start": "node app.js"
->>>>>>> 04ac03c51dcea7ea69a2658c7c6f125f867dc759
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mic-Ko/firstfolio.git",
+	  "start": "node app.js",
+  },
+  "keywords": [
+    "Portfolio",
+    "sklills"
+  ],
   "author": "Mic-Ko",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mic-Ko/firstfolio/issues"
+  },
+  "homepage": "https://github.com/Mic-Ko/firstfolio#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "ejs": "^3.1.3",
-    "express": "^4.17.1",
-    "mongoose": "^5.9.16"
+    "express": "^4.17.1"
   }
 }
