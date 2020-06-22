@@ -77,7 +77,6 @@ html {
   }
 
   div#resume ul li {
-    list-style-type: none;
     padding-bottom: 10px;
   }
   a a:hover, a:visited, a:link, a:active{
@@ -213,14 +212,18 @@ html {
 	div#resume h1 p{
 		margin-left:0;
   }
-
 }
+
+
   @media screen and (max-width:550px) {
 
     div#resume img {
       transform: rotate(0deg)
     }
+	div#resume ul li {
+    list-style-type: none;
   }
+}
 
   @media screen and (max-width:400px) {
     div#resume dl dt {
